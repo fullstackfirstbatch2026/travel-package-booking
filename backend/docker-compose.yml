@@ -14,7 +14,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   backend:
-    image: travel-booking-backend:latest
+    image: mjayashree08/travel-booking-backend:latest
     container_name: travel-backend
     environment:
       DB_HOST: mysql
@@ -26,7 +26,7 @@ services:
       - mysql
 
   frontend:
-    image: travel-booking-frontend:latest
+    image: mjayashree08/travel-booking-frontend:latest
     container_name: travel-frontend
     ports:
       - "8081:80"
